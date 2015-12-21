@@ -87,6 +87,7 @@ methods
   % render image and crop tightly
     assert(isscalar(this));
     [rendering, depth] = Renderer_('render', this.id_);
+    depth = 1 - depth;
     rowIdx = find(sum(depth,1) > 0);
     colIdx = find(sum(depth,2) > 0);
     minRowI = min(rowIdx);

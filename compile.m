@@ -1,8 +1,8 @@
 % If the compile fails, add  '-std=c++11' at the end of CFLAG and CXXFLAGS
-% inside mexopts.sh. 
+% inside mexopts.sh.
 % If you don't know where `mexopts.sh` is, type `mex -v -n` and read the
-% output carefully. 
-% 
+% output carefully.
+%
 % 1. change mexopts.sh and add '-std=c++11' to CXXFLAGS
 % 2. make('all','-lGL -lGLU -losg -losgDB -losgGA -losgViewer -losgUtil');
 
